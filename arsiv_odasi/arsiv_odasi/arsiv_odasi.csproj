@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8941E783-D4AC-4856-A837-891B832882D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>arsiv_odasi</RootNamespace>
+    <AssemblyName>arsiv_odasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="arsivDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsivDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bolumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolumForm.Designer.cs">
+      <DependentUpon>bolumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\cmbClass.cs" />
+    <Compile Include="dosyaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dosyaForm.Designer.cs">
+      <DependentUpon>dosyaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="evrakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="evrakForm.Designer.cs">
+      <DependentUpon>evrakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\genelClass.cs" />
+    <Compile Include="genelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genelForm.Designer.cs">
+      <DependentUpon>genelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klasorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klasorForm.Designer.cs">
+      <DependentUpon>klasorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odaForm.Designer.cs">
+      <DependentUpon>odaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rafForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rafForm.Designer.cs">
+      <DependentUpon>rafForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerForm.Designer.cs">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bolumForm.resx">
+      <DependentUpon>bolumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dosyaForm.resx">
+      <DependentUpon>dosyaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="evrakForm.resx">
+      <DependentUpon>evrakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genelForm.resx">
+      <DependentUpon>genelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klasorForm.resx">
+      <DependentUpon>klasorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odaForm.resx">
+      <DependentUpon>odaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rafForm.resx">
+      <DependentUpon>rafForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerForm.resx">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="arsivDataSet.xsc">
+      <DependentUpon>arsivDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="arsivDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsivDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsivDataSet.xss">
+      <DependentUpon>arsivDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
