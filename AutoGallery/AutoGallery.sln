@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoGallery", "AutoGallery\AutoGallery.csproj", "{5450D7A8-35FC-4020-8382-A79CC89FDEB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5450D7A8-35FC-4020-8382-A79CC89FDEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5450D7A8-35FC-4020-8382-A79CC89FDEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5450D7A8-35FC-4020-8382-A79CC89FDEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5450D7A8-35FC-4020-8382-A79CC89FDEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCC26A86-2E14-4BC7-9189-E24848236268}
+	EndGlobalSection
+EndGlobal
