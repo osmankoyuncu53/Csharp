@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\Admin.cs" />
     <Compile Include="Concrete\Appointment.cs" />
     <Compile Include="Concrete\City.cs" />
     <Compile Include="Concrete\District.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Concrete\Hospital.cs" />
     <Compile Include="Concrete\Patient.cs" />
     <Compile Include="Concrete\Policlinic.cs" />
+    <Compile Include="Concrete\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

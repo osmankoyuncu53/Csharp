@@ -68,13 +68,13 @@
     <Compile Include="EntityFramework\EfHospitalDal.cs" />
     <Compile Include="EntityFramework\EfPatientDal.cs" />
     <Compile Include="EntityFramework\EfPoliclinicDal.cs" />
-    <Compile Include="Migrations\202208171050266_generalvt.cs" />
-    <Compile Include="Migrations\202208171050266_generalvt.designer.cs">
-      <DependentUpon>202208171050266_generalvt.cs</DependentUpon>
+    <Compile Include="Migrations\202208260813245_mig_genelVt.cs" />
+    <Compile Include="Migrations\202208260813245_mig_genelVt.designer.cs">
+      <DependentUpon>202208260813245_mig_genelVt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202208171102077_mig2.cs" />
-    <Compile Include="Migrations\202208171102077_mig2.designer.cs">
-      <DependentUpon>202208171102077_mig2.cs</DependentUpon>
+    <Compile Include="Migrations\202208260821230_mig_cityDoctor.cs" />
+    <Compile Include="Migrations\202208260821230_mig_cityDoctor.designer.cs">
+      <DependentUpon>202208260821230_mig_cityDoctor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,11 +90,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202208171050266_generalvt.resx">
-      <DependentUpon>202208171050266_generalvt.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208260813245_mig_genelVt.resx">
+      <DependentUpon>202208260813245_mig_genelVt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202208171102077_mig2.resx">
-      <DependentUpon>202208171102077_mig2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208260821230_mig_cityDoctor.resx">
+      <DependentUpon>202208260821230_mig_cityDoctor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

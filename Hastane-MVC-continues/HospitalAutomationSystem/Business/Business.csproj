@@ -61,8 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAppointmentService.cs" />
+    <Compile Include="Abstract\IDoctorService.cs" />
+    <Compile Include="Abstract\IHospitalService.cs" />
+    <Compile Include="Abstract\IPatientService.cs" />
+    <Compile Include="Abstract\IPoliclinicService.cs" />
     <Compile Include="Concrete\AppointmentManager.cs" />
+    <Compile Include="Concrete\DoctorManager.cs" />
+    <Compile Include="Concrete\HospitalManager.cs" />
+    <Compile Include="Concrete\PatientManager.cs" />
+    <Compile Include="Concrete\PoliclinicManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidationRules\DoctorValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -78,9 +87,7 @@
       <Name>Entity</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValidationRules\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -13,7 +13,8 @@ namespace EntityLayer.Concrete
         public int DistrictID { get; set; }
         [StringLength(20)]
         public string DistrictName { get; set; }
-        public ICollection<City> Cities { get; set; }
+        public int CityID { get; set; }
+        public virtual City City { get; set; }
         public ICollection<Hospital> Hospitals { get; set; }
     }
 }

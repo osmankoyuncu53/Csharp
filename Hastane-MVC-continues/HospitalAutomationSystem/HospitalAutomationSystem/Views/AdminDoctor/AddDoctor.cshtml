@@ -1,0 +1,96 @@
+﻿@model EntityLayer.Concrete.Doctor
+@{
+    ViewBag.Title = "AddDoctor";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Doktor Ekle</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Doktor Ekle</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- jquery validation -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Doktor Ekle <small></small></h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        @using (Html.BeginForm("AddDoctor", "AdminDoctor", FormMethod.Post))
+                        {
+                            <div class="card-body">
+                                <div class="form-group">
+                                    @Html.Label("Doctor Adı")
+                                    @Html.TextBoxFor(x => x.DoctorName, new { placeholder = "Doktor Adını Giriniz", @class = "form-control" })
+                                    @Html.ValidationMessageFor(x => x.DoctorName,null, new { @style = "color:red;" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Doctor Soyadı")
+                                    @Html.TextBoxFor(x => x.DoctorSurname, new { placeholder = "Doktor Soyadını Giriniz", @class = "form-control" })
+                                    @Html.ValidationMessageFor(x => x.DoctorSurname,null, new { @style = "color:red;" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Doctor Statüsü")
+                                    <select class="form-control" name="DoctorStatus">
+                                        <option value="True">Aktif</option>
+                                        <option value="False">Pasif</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Hastane")
+                                    @Html.DropDownListFor(x => x.HospitalID, (List<SelectListItem>)ViewBag.vlh, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Poliklinik")
+                                    @Html.DropDownListFor(x => x.PoliclinicID, (List<SelectListItem>)ViewBag.vlp, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group mb-0">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="terms" class="custom-control-input">
+                                        <label class="custom-control-label">Hizmet şartlarını <a href="#">kabul ediyorum</a>.</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-primary">Doktor Ekle</button>
+                                </div>
+                        }
+                    </div>
+
+                    <!-- /.card -->
+                </div>
+
+                <!--/.col (left) -->
+                <!-- right column -->
+                <div class="col-md-6">
+
+                </div>
+                <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
