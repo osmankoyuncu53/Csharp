@@ -115,8 +115,8 @@ namespace HospitalAutomationSystem.Controllers
         }
         public ActionResult DeleteDoctor(int id)
         {
-            var categoryvalue = dm.GetByID(id);
-            dm.DoctorDelete(categoryvalue);
+            var doctorValue = dm.GetByID(id);
+            dm.DoctorDelete(doctorValue);
             return RedirectToAction("Index");
         }
     }

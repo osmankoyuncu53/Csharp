@@ -76,6 +76,18 @@
     <Compile Include="Migrations\202208260821230_mig_cityDoctor.designer.cs">
       <DependentUpon>202208260821230_mig_cityDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208271111225_mig_hospitalstatu.cs" />
+    <Compile Include="Migrations\202208271111225_mig_hospitalstatu.designer.cs">
+      <DependentUpon>202208271111225_mig_hospitalstatu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208290829563_mig_patientStatus.cs" />
+    <Compile Include="Migrations\202208290829563_mig_patientStatus.designer.cs">
+      <DependentUpon>202208290829563_mig_patientStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209041441535_mig-user.cs" />
+    <Compile Include="Migrations\202209041441535_mig-user.designer.cs">
+      <DependentUpon>202209041441535_mig-user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -95,6 +107,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208260821230_mig_cityDoctor.resx">
       <DependentUpon>202208260821230_mig_cityDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208271111225_mig_hospitalstatu.resx">
+      <DependentUpon>202208271111225_mig_hospitalstatu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208290829563_mig_patientStatus.resx">
+      <DependentUpon>202208290829563_mig_patientStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209041441535_mig-user.resx">
+      <DependentUpon>202209041441535_mig-user.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

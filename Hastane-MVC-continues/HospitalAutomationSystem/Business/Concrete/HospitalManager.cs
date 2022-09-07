@@ -35,7 +35,9 @@ namespace Business.Concrete
 
         public void HospitalDelete(Hospital hospital)
         {
-            _hospitalDal.Delete(hospital);
+
+            hospital.HospitalStatus = false;
+            _hospitalDal.Update(hospital);
         }
 
         public void HospitalUpdate(Hospital hospital)

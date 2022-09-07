@@ -25,7 +25,8 @@ namespace Business.Concrete
 
         public void AppointmentDelete(Appointment appointment)
         {
-            _appointmentDal.Delete(appointment);
+            appointment.AppointmentStatus = false;
+            _appointmentDal.Update(appointment);
         }
 
         public void AppointmentUpdate(Appointment appointment)

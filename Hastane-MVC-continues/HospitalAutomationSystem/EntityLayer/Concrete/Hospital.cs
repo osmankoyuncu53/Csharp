@@ -13,7 +13,9 @@ namespace EntityLayer.Concrete
         public int HospitalID { get; set; }
         [StringLength(50)]
         public string HospitalName { get; set; }
-        
+
+        public bool HospitalStatus { get; set; }
+
         public int DistrictID { get; set; }
         public virtual District District { get; set; }
     }

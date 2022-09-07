@@ -1,0 +1,575 @@
+﻿@model EntityLayer.Concrete.Appointment
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div class="ulockd-home-slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="pogoSlider" id="js-main-slider">
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(/a-health-lab/images/slider-01.jpg);">
+                    <div class="lbox-caption pogoSlider-slide-element">
+                        <div class="lbox-details">
+                            <h1>Welcome to Health Lab</h1>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(/a-health-lab/images/slider-02.jpg);">
+                    <div class="lbox-caption pogoSlider-slide-element">
+                        <div class="lbox-details">
+                            <h1>We are Expert in The Field of Health Lab</h1>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>
+                            <a href="#appointment" class="btn">Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(/a-health-lab/images/slider-03.jpg);">
+                    <div class="lbox-caption pogoSlider-slide-element">
+                        <div class="lbox-details">
+                            <h1>Welcome to Health Lab</h1>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- .pogoSlider -->
+        </div>
+    </div>
+</div>
+<!-- End Banner -->
+<!-- Start About us -->
+<div id="about" class="about-box">
+    <div class="about-a1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box">
+                        <h2>Hakkımızda</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row align-items-center about-main-info">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h2>Health Lab'a Hoş Geldin </h2>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="about-m">
+                                <ul id="banner">
+                                    <li>
+                                        <img src="/a-health-lab/images/about-img-01.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="/a-health-lab/images/about-img-02.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="/a-health-lab/images/about-img-03.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About us -->
+<!-- Start Services -->
+<div id="services" class="services-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Servisler</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-h-square" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-hospital-o" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-wheelchair" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-plus-square" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="serviceBox">
+                            <div class="service-icon"><i class="fa fa-ambulance" aria-hidden="true"></i></div>
+                            <h3 class="title">Lorem ipsum dolor</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+                            </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Services -->
+<!-- Start Gallery -->
+<div id="gallery" class="gallery-box">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Galeri</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-gallery row clearfix">
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-01.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-01.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-02.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-02.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-03.jpg" alt="">
+                    <div class="box-content">
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-03.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-04.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-04.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-05.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-05.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-06.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-06.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-07.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-07.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="/a-health-lab/images/gallery-08.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="/a-health-lab/images/gallery-08.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Gallery -->
+<!-- Start Team -->
+<div id="team" class="team-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Doktorlarımız</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="/a-health-lab/images/img-1.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">kristina</h3>
+                        <span class="post">Web Designer</span>
+
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="/a-health-lab/images/img-2.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Osman</h3>
+                        <span class="post">Full Stack Dev</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="/a-health-lab/images/img-3.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Steve Thomas</h3>
+                        <span class="post">web developer</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- End Team -->
+<!-- Start Blog -->
+<div id="blog" class="blog-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Blog</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="/a-health-lab/images/blog-img-01.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <a href="#"><i class="fa fa-comments-o"></i> 5 Yorum </a>
+                        <a href="#"><i class="fa fa-user-o"></i> Admin</a>
+                        <span class="dti">25 Hazıran 2018</span>
+                    </div>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Devamını Oku <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="/a-health-lab/images/blog-img-02.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <a href="#"><i class="fa fa-comments-o"></i> 5 Yorum </a>
+                        <a href="#"><i class="fa fa-user-o"></i> Admin</a>
+                        <span class="dti">25 Haziran 2018</span>
+                    </div>
+                    <h2>Proin vel sem ut lorem rhoncus lacinia. </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Devamını Oku <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="/a-health-lab/images/blog-img-03.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <a href="#"><i class="fa fa-comments-o"></i> 5 Yorum </a>
+                        <a href="#"><i class="fa fa-user-o"></i> Admin</a>
+                        <span class="dti">25 Eylül 2018</span>
+                    </div>
+                    <h2>Aliquam egestas magna a malesuada rutrum. </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Devamını Oku <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog -->
+<!-- Start Contact -->
+<div id="contact" class="contact-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Bize Ulaşın</h2>
+                    <p>Bize mail yoluyla ulaşabilirsiniz. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12 col-xs-12">
+                <div class="contact-block">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Ad" required data-error="Lütfen adınızı giriniz">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Mail Adresi" id="email" class="form-control" name="name" required data-error="Lütfen email giriniz">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Telefon Numarası" id="number" class="form-control" name="number" required data-error="Lütfen telefon numaranızı giriniz">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Mesajınız" rows="8" data-error="Mesajınızı Yazınız" required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="submit-button text-center">
+                                    <button class="btn btn-common" id="submit" type="submit">Mesajı Gönder</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-12 col-xs-12">
+                <div class="left-contact">
+                    <h2>Adres</h2>
+                    <div class="media cont-line">
+                        <div class="media-left icon-b">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        </div>
+                        <div class="media-body dit-right">
+                            <h4>Adres</h4>
+                            <p>Kadıköy/İstanbul, 34000</p>
+                        </div>
+                    </div>
+                    <div class="media cont-line">
+                        <div class="media-left icon-b">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="media-body dit-right">
+                            <h4>Email</h4>
+                            <a href="#">test@gmail.com</a><br>
+                            <a href="#">test2@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="media cont-line">
+                        <div class="media-left icon-b">
+                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="media-body dit-right">
+                            <h4>Telefon Numarası</h4>
+                            <a href="#">12345 67890</a><br>
+                            <a href="#">12345 67890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- End Contact -->
+<!-- Start Subscribe -->
+<div class="subscribe-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="subscribe-inner text-center clearfix">
+                    <h2>Abone Ol</h2>
+                    <p>En yeni gelişmelerden haberdar olmak ve hızımıza ayak uydurmak için abone olun.</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input class="form-control-1" id="email-1" name="email" placeholder="Email Adres" required="" type="text">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="new-btn-d br-2">
+                                Abone Ol
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Subscribe -->
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Randevu Alma Penceresi</h2>
+            </div>
+            @using (Html.BeginForm("Index", "UserHome", FormMethod.Post))
+            {
+                <div class="modal-body">
+                    <label>Randevu Tarihi</label>
+                    @Html.TextBoxFor(x => x.AppointmentDate, new {@type="date", @class = "form-control" })
+
+                    <label hidden>Randevu Statüsü</label>
+                    <input type="text" name="AppointmentStatus" class="form-control" value="true" hidden />
+
+                    <label>T.C. Giriniz</label>
+                    @Html.DropDownListFor(x => x.PatientID, (List<SelectListItem>)ViewBag.vlp, new { @class = "form-control" })
+
+                    <label>Doktor Seçiniz</label>
+                     @Html.DropDownListFor(x => x.DoctorID, (List<SelectListItem>)ViewBag.vld, new { @class = "form-control" })
+                    <input type="submit" name="gonder" value="Randevuyu Al" class="btn-success" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

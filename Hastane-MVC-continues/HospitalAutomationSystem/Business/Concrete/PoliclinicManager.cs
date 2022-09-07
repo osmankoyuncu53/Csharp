@@ -35,7 +35,8 @@ namespace Business.Concrete
 
         public void PoliclinicDelete(Policlinic policlinic)
         {
-            _policlinicDal.Delete(policlinic);
+            policlinic.PoliclinicStatus = false;
+            _policlinicDal.Update(policlinic);
         }
 
         public void PoliclinicUpdate(Policlinic policlinic)

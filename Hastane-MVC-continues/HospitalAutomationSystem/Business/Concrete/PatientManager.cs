@@ -35,7 +35,8 @@ namespace Business.Concrete
 
         public void PatientDelete(Patient patient)
         {
-            _patientDal.Delete(patient);
+            patient.PatientStatus = false;
+            _patientDal.Update(patient);
         }
 
         public void PatientUpdate(Patient patient)

@@ -138,11 +138,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminPanel\AdminAppointmentController.cs" />
     <Compile Include="Controllers\AdminPanel\AdminDoctorController.cs" />
+    <Compile Include="Controllers\AdminPanel\AdminExitController.cs" />
     <Compile Include="Controllers\AdminPanel\AdminHomeController.cs" />
+    <Compile Include="Controllers\AdminPanel\AdminHospitalController.cs" />
+    <Compile Include="Controllers\AdminPanel\AdminPatientController.cs" />
+    <Compile Include="Controllers\AdminPanel\AdminPoliclinicController.cs" />
     <Compile Include="Controllers\AdminPanel\ErrorPageController.cs" />
     <Compile Include="Controllers\Auth\AdminLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserPanel\UserHomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2462,6 +2468,18 @@
     <Content Include="Views\AdminDoctor\UpdateDoctor.cshtml" />
     <Content Include="Views\ErrorPage\Page404.cshtml" />
     <Content Include="Views\AdminLogin\Index.cshtml" />
+    <Content Include="Views\AdminHospital\Index.cshtml" />
+    <Content Include="Views\AdminHospital\AddHospital.cshtml" />
+    <Content Include="Views\AdminHospital\UpdateHospital.cshtml" />
+    <Content Include="Views\AdminPoliclinic\Index.cshtml" />
+    <Content Include="Views\AdminPoliclinic\AddPoliclinic.cshtml" />
+    <Content Include="Views\AdminPoliclinic\UpdatePoliclinic.cshtml" />
+    <Content Include="Views\AdminPatient\Index.cshtml" />
+    <Content Include="Views\AdminAppointment\Index.cshtml" />
+    <Content Include="Views\AdminAppointment\AddAppointment.cshtml" />
+    <Content Include="Views\AdminExit\Index.cshtml" />
+    <Content Include="Views\UserHome\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

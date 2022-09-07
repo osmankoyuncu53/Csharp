@@ -51,8 +51,10 @@
                     <!-- small box -->
                     <div class="small-box bg-success">
                         <div class="inner">
-                            <h3><sup style="font-size: 20px">%</sup></h3>
-
+                            @using (Html.BeginForm("Index", "AdminDoctor", FormMethod.Post))
+                            {
+                                <h3>@ViewBag.PatientCount</h3>
+                            }
                             <p>Toplam Kayıtlı Hasta Sayısı</p>
                         </div>
                         <div class="icon">
@@ -83,7 +85,10 @@
                     <!-- small box -->
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <h3>65</h3>
+                            @using (Html.BeginForm("Index", "AdminDoctor", FormMethod.Post))
+                            {
+                                <h3>@ViewBag.AppointmentCount</h3>
+                            }
 
                             <p>Aktif Randevu Sayısı</p>
                         </div>

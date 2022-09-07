@@ -1,0 +1,83 @@
+﻿@using EntityLayer.Concrete
+@model List<Appointment>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Randevular</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Randevular</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Randevu bilgileri aşağıda listelenmektedir.</h3>
+                        <h3 style="float:right;"><a href="/AdminAppointment/AddAppointment"><button class="btn btn-primary">Yeni Randevu Ekle</button></a></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Randevu Tarihi</th>
+                                    <th>Randevu Statüsü</th>
+                                    <th>Hasta Adı</th>
+                                    <th>Doktor Adı</th>
+                                    <th>Sil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td>@item.AppointmentID</td>
+                                    <td>@item.AppointmentDate</td>
+                                    <td>@item.AppointmentStatus</td>
+                                    <td>@item.Patient.PatientName</td>
+                                    <td>@item.Doctor.DoctorName</td>
+                                    <td><a href="/AdminAppointment/DeleteAppointment/@item.AppointmentID"><button class="btn btn-danger">Sil</button></a></td>
+                                </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Randevu Tarihi</th>
+                                    <th>Randevu Statüsü</th>
+                                    <th>Hasta Adı</th>
+                                    <th>Doktor Adı</th>
+                                    <th>Sil</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

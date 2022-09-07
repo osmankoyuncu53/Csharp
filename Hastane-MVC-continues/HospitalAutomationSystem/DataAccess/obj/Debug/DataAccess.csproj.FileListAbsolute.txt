@@ -16,3 +16,6 @@ C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAc
 C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAccess.Migrations.mig_genelVt.resources
 C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.cache
 C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAccess.Migrations.mig_cityDoctor.resources
+C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAccess.Migrations.mig_hospitalstatu.resources
+C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAccess.Migrations.mig_patientStatus.resources
+C:\Users\osman\source\repos\HospitalAutomationSystem\DataAccess\obj\Debug\DataAccess.Migrations.miguser.resources

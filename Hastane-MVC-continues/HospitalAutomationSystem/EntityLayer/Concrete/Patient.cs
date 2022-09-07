@@ -19,6 +19,7 @@ namespace EntityLayer.Concrete
         public string PatientIdentityNumber { get; set; }
         [StringLength(50)]
         public string PatientPassword { get; set; }
+        public bool PatientStatus { get; set; }
         public ICollection<Appointment> Appointments { get; set; }
     }
 }

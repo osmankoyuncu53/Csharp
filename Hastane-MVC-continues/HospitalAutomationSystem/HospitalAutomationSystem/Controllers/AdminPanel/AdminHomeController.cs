@@ -21,6 +21,12 @@ namespace HospitalAutomationSystem.Controllers
 
             var resultsHospital = conn.Hospitals.Count();
             ViewBag.HospitalCount = resultsHospital;
+
+            var resultsPatient = conn.Patients.Count();
+            ViewBag.PatientCount = resultsPatient;
+
+            var resultsAppointment = conn.Appointments.Where(p=>p.AppointmentStatus==true).Count();
+            ViewBag.AppointmentCount = resultsAppointment;
             return View();
         }
     }
