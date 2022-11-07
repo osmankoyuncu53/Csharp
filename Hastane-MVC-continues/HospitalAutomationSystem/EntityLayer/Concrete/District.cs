@@ -15,6 +15,6 @@ namespace EntityLayer.Concrete
         public string DistrictName { get; set; }
         public int CityID { get; set; }
         public virtual City City { get; set; }
-        public ICollection<Hospital> Hospitals { get; set; },
+        public ICollection<Hospital> Hospitals { get; set; }
     }
 }
